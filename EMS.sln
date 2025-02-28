@@ -3,12 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMS.Data", "EMS.Data\EMS.Data.csproj", "{C24D4BCF-8EC2-4402-89DD-814E4CC40D82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C24D4BCF-8EC2-4402-89DD-814E4CC40D82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C24D4BCF-8EC2-4402-89DD-814E4CC40D82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C24D4BCF-8EC2-4402-89DD-814E4CC40D82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C24D4BCF-8EC2-4402-89DD-814E4CC40D82}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {159F4E09-AF96-48C8-9723-CDF5BEE4D48D}
 	EndGlobalSection
 EndGlobal
