@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EMS.Data.Scripts
-{
-    class _0016_create_table_info_state
-    {
-    }
-}
+﻿
+    CREATE Table info.info_state
+    (
+        id SERIAL PRIMARY KEY,
+        short_name VARCHAR(10) NOT NULL, --active and passive
+        full_name  VARCHAR(50) NOT NULL, --
+        created_date TIMESTAMP without TIME ZONE DEFAULT current_TIMESTAMP,
+        updated_date TIMESTAMP without TIME ZONE
+    );

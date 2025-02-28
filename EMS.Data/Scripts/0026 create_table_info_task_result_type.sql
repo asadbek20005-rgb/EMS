@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿CREATE TABLE info.info_task_result_type
+(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50) UNIQUE NOT NULL,
+    description TEXT NULL,
+    is_active BOOLEAN DEFAULT TRUE,
 
-namespace EMS.Data.Scripts
-{
-    class _0026_create_table_info_task_result_type
-    {
-    }
-}
+    created_ad TIMESTAMP WITHOUT TIME ZONE DEFAULT current_TIMESTAMP,
+    updated_ad TIMESTAMP WITHOUT TIME ZONE
+);

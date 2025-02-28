@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EMS.Data.Scripts
-{
-    class _0022_create_table_info_info_contract
-    {
-    }
-}
+﻿create table info.info_contract_type
+(
+    id SERIAL PRIMARY KEY,
+    user_id UUID NOT NULL REFERENCES my.sys_user(id),
+    status BOOLEAN DEFAULT TRUE,
+    created_date TIMESTAMP WITHOUT TIME ZONE DEFAULT current_TIMESTAMP,
+    updated_date TIMESTAMP WITHOUT TIME ZONE
+)

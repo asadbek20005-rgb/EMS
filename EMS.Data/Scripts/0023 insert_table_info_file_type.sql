@@ -1,12 +1,50 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿INSERT INTO info.info_content_type (short_name, full_name, type_name)
+VALUES
+( 'TXT', 'Text File', 'text/plain' ),
+( 'CSV', 'Comma-Separated Values', 'text/csv' ),
+( 'LOG', 'Log File', 'text/plain' ),
+( 'DOC', 'Microsoft Word Document', 'application/msword' ),
+( 'DOCX', 'Microsoft Word Open XML Document', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' ),
+( 'PDF', 'Portable Document Format', 'application/pdf' ),
+( 'XLS', 'Microsoft Excel Spreadsheet', 'application/vnd.ms-excel' ),
+( 'XLSX', 'Microsoft Excel Open XML Spreadsheet', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' ),
+( 'PPT', 'Microsoft PowerPoint Presentation', 'application/vnd.ms-powerpoint' ),
+( 'PPTX', 'Microsoft PowerPoint Open XML Presentation', 'application/vnd.openxmlformats-officedocument.presentationml.presentation' ),
+( 'JPG', 'JPEG Image', 'image/jpeg' ),
+( 'JPEG', 'JPEG Image', 'image/jpeg' ),
+( 'PNG', 'Portable Network Graphics', 'image/png' ),
+( 'GIF', 'Graphics Interchange Format', 'image/gif' ),
+( 'BMP', 'Bitmap Image', 'image/bmp' ),
+( 'TIFF', 'Tagged Image File Format', 'image/tiff' ),
+( 'SVG', 'Scalable Vector Graphics', 'image/svg+xml' ),
+( 'MP3', 'MP3 Audio', 'audio/mpeg' ),
+( 'WAV', 'Waveform Audio', 'audio/wav' ),
+( 'FLAC', 'Free Lossless Audio Codec', 'audio/flac' ),
+( 'AAC', 'Advanced Audio Codec', 'audio/aac' ),
+( 'OGG', 'Ogg Vorbis Audio', 'audio/ogg' ),
+( 'MP4', 'MPEG-4 Video', 'video/mp4' ),
+( 'AVI', 'Audio Video Interleave', 'video/x-msvideo' ),
+( 'MKV', 'Matroska Video', 'video/x-matroska' ),
+( 'MOV', 'Apple QuickTime Movie', 'video/quicktime' ),
+( 'WMV', 'Windows Media Video', 'video/x-ms-wmv' ),
+( 'ZIP', 'ZIP Archive', 'application/zip' ),
+( 'RAR', 'RAR Archive', 'application/vnd.rar' ),
+( '7Z', '7-Zip Archive', 'application/x-7z-compressed' ),
+( 'TAR', 'Tape Archive', 'application/x-tar' ),
+( 'GZ', 'Gzip Compressed File', 'application/gzip' ),
+( 'C', 'C Source Code', 'text/x-c' ),
+( 'CPP', 'C++ Source Code', 'text/x-c++' ),
+( 'CS', 'C# Source Code', 'text/plain' ),
+( 'PY', 'Python Script', 'text/x-python' ),
+( 'JS', 'JavaScript File', 'application/javascript' ),
+( 'HTML', 'HyperText Markup Language', 'text/html' ),
+( 'CSS', 'Cascading Style Sheets', 'text/css' ),
+( 'JAVA', 'Java Source Code', 'text/x-java-source' ),
+( 'PHP', 'PHP Script', 'application/x-httpd-php' ),
+( 'SQL', 'Structured Query Language', 'application/sql' ),
+( 'DB', 'Database File', 'application/octet-stream' ),
+( 'JSON', 'JavaScript Object Notation', 'application/json' ),
+( 'XML', 'Extensible Markup Language', 'application/xml' );
 
-namespace EMS.Data.Scripts
-{
-    class _0023_insert_table_info_file_type
-    {
-    }
-}
+
+select *from info.info_content_type

@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using StatusGeneric;
 
-namespace EMS.Services.ApiServices.Contracts
+namespace EMS.Services.ApiServices.Contracts;
+
+public interface IBaseInfoService<TEntity> : IStatusGeneric
 {
-    interface IBaseInfoService
-    {
-    }
+    Task<List<TDto>> GetAll<TDto>();
+    Task<TDto?> GetById<TDto, TId>(TId id);
+    Task<string> Create<TModel>(TModel model);
+    Task<string?> Update<TId, TModel>(TId id, TModel model);
+    Task<string?> DeleteById<TId>(TId id);
 }

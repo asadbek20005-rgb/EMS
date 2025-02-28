@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿CREATE TABLE info.info_job_type
+(
+    id SERIAL PRIMARY KEY,
+    code  VARCHAR(10),
+    short_name VARCHAR(10) NOT NULL,
+    full_name  VARCHAR(50) NOT NULL,
 
-namespace EMS.Data.Scripts
-{
-    class _0008_create_table_info_job_type
-    {
-    }
-}
+    
+    created_date TIMESTAMP without TIME ZONE DEFAULT current_TIMESTAMP,
+    updated_date TIMESTAMP without TIME ZONE
+);

@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Http;
 
-namespace EMS.Services.ApiServices.Contracts
+namespace EMS.Services.ApiServices.Contracts;
+
+public interface IAdminService
 {
-    interface IAdminService
-    {
-    }
+    Task AddContent(IFormFile file);
 }

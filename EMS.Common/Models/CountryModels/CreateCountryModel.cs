@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
-namespace EMS.Common.Models.CountryModels
+namespace EMS.Common.Models;
+
+public class CreateCountryModel
 {
-    class CreateCountryModel
-    {
-    }
+
+    public string Code { get; set; }
+
+    public string ShortName { get; set; }
+
+
+    public string FullName { get; set; }
 }

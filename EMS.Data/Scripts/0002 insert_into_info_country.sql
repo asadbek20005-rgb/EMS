@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EMS.Data.Scripts
-{
-    class _0002_insert_into_info_country
-    {
-    }
-}
+﻿insert into info.info_country(code, short_name, full_name)
+values
+('01', 'uzb', 'uzbekistan'),
+('02', 'qqp', 'qoraqalpog’iston'),
+('03', 'qz', 'qozo’giston');

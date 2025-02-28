@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace EMS.Services.ApiServices.Contracts;
 
-namespace EMS.Services.ApiServices.Contracts
+public interface IEmployeeService
 {
-    interface IEmployeeService
-    {
-    }
 }

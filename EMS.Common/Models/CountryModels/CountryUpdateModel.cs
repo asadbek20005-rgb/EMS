@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace EMS.Common.Models;
 
-namespace EMS.Common.Models.CountryModels
+public class CountryUpdateModel
 {
-    class CountryUpdateModel
-    {
-    }
+    public string Code { get; set; }
+
+    public string ShortName { get; set; }
+
+
+    public string FullName { get; set; }
 }

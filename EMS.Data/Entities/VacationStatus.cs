@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using EMS.Data.Entities.BaseEntities;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace EMS.Data.Entities
+namespace EMS.Data.Entities;
+
+[Table("info_vacation_status", Schema = "my")]
+public class VacationStatus : BaseInfoEntity
 {
-    class VacationStatus
-    {
-    }
+    [InverseProperty(nameof(VacationType.Status))]
+    public List<VacationType>? VacationTypes { get; set; }
 }

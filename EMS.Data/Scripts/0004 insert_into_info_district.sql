@@ -1,12 +1,108 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿-- uzb districts
+INSERT INTO info.info_district (code, short_name, full_name)
+VALUES
+    ('0101', 'and_d', 'Andijon shahar'),
+    ('0102', 'and_ux', 'Ulug‘nor tuman'),
+    ('0103', 'and_as', 'Asaka tuman'),
+    ('0104', 'and_ol', 'Oltiariq tuman'),
+    ('0105', 'and_bo', 'Bo‘z tuman'),
+    ('0106', 'and_sh', 'Shahrihon tuman'),
+    ('0107', 'and_ay', 'Ayritom tuman'),
+    ('0108', 'and_bu', 'Buloqboshi tuman'),
+    ('0201', 'bxr_d', 'Buxoro shahar'),
+    ('0202', 'bxr_uy', 'Qorako‘l tuman'),
+    ('0203', 'bxr_h', 'G‘ijduvon tuman'),
+    ('0204', 'bxr_b', 'Buxoro tumani'),
+    ('0205', 'bxr_j', 'Jondor tuman'),
+    ('0206', 'bxr_s', 'Shofirkon tuman'),
+    ('0207', 'bxr_sj', 'Samarqand jamoat tuman'),
+    ('0301', 'frg_d', 'Farg‘ona shahar'),
+    ('0302', 'frg_m', 'Marhamat tuman'),
+    ('0303', 'frg_ku', 'Quva tuman'),
+    ('0304', 'frg_mn', 'Mingbuloq tuman'),
+    ('0305', 'frg_b', 'Bag‘dod tuman'),
+    ('0306', 'frg_y', 'Yazyavan tuman'),
+    ('0307', 'frg_dj', 'Djyday tuman'),
+    ('0401', 'jzz_d', 'Jizzax shahar'),
+    ('0402', 'jzz_h', 'Hovos tuman'),
+    ('0403', 'jzz_z', 'Zafarobod tuman'),
+    ('0404', 'jzz_zf', 'Zarbdor tuman'),
+    ('0405', 'jzz_gy', 'G‘allaorol tuman'),
+    ('0406', 'jzz_sy', 'Samarqandyoq tuman'),
+    ('0501', 'qsh_d', 'Qashqadaryo shahar'),
+    ('0502', 'qsh_s', 'Shahrisabz tuman'),
+    ('0503', 'qsh_b', 'Beshariq tuman'),
+    ('0504', 'qsh_g', 'G‘uzor tuman'),
+    ('0505', 'qsh_kh', 'Koson tuman'),
+    ('0506', 'qsh_n', 'Nishon tuman'),
+    ('0507', 'qsh_za', 'Zafarobod tuman'),
+    ('0601', 'nvv_d', 'Navoi shahar'),
+    ('0602', 'nvv_s', 'Uchkuduk tuman'),
+    ('0603', 'nvv_n', 'Navoiy tuman'),
+    ('0604', 'nvv_z', 'Zarafshon tuman'),
+    ('0605', 'nvv_t', 'Tinchlik tuman'),
+    ('0606', 'nvv_k', 'Karmana tuman'),
+    ('0701', 'nmn_d', 'Namangan shahar'),
+    ('0702', 'nmn_s', 'Suyunchi tuman'),
+    ('0703', 'nmn_b', 'Baland tuman'),
+    ('0704', 'nmn_k', 'Kadamjay tuman'),
+    ('0705', 'nmn_uz', 'Uzun tuman'),
+    ('0706', 'nmn_qi', 'Quva tuman'),
+    ('0801', 'smr_d', 'Samarqand shahar'),
+    ('0802', 'smr_n', 'Nurobod tuman'),
+    ('0803', 'smr_k', 'Kattakurgan tuman'),
+    ('0804', 'smr_ji', 'Jomboy tuman'),
+    ('0805', 'smr_z', 'Zarafshon tuman'),
+    ('0901', 'srd_d', 'Sirdaryo shahar'),
+    ('0902', 'srd_a', 'Akaltyn tuman'),
+    ('0903', 'srd_b', 'Bekabad tuman'),
+    ('1001', 'srxd_d', 'Surxondaryo shahar'),
+    ('1002', 'srxd_uz', 'Uzun tuman'),
+    ('1003', 'srxd_s', 'Sariosiyo tuman'),
+    ('1101', 'tsk_d', 'Toshkent shahar'),
+    ('1102', 'tsk_n', 'Nurobod tuman'),
+    ('1103', 'tsk_b', 'Bunyodkor tuman'),
+    ('1201', 'xz_d', 'Xorazm shahar'),
+    ('1202', 'xz_qi', 'Qoshkopir tuman'),
+    ('1203', 'xz_sh', 'Shovot tuman');
 
-namespace EMS.Data.Scripts
-{
-    class _0004_insert_into_info_district
-    {
-    }
-}
+
+-- Qozog'izton districts
+    INSERT INTO info.info_district (code, short_name, full_name, city_id)
+VALUES
+    ('0101', 'kz_d', 'Almaty shahar'),
+    ('0102', 'kz_sh', 'Shymkent shahar'),
+    ('0103', 'kz_q', 'Qaraganda viloyati'),
+    ('0104', 'kz_s', 'Aqtobe viloyati'),
+    ('0105', 'kz_pv', 'Pavlodar viloyati'),
+    ('0106', 'kz_mg', 'Mang‘istau viloyati'),
+    ('0107', 'kz_b', 'Qostanay viloyati'),
+    ('0108', 'kz_zh', 'Zhambul viloyati'),
+    ('0109', 'kz_a', 'Aktobe viloyati'),
+    ('0110', 'kz_tk', 'Tavriz viloyati'),
+    ('0111', 'kz_kyz', 'Qizilorda viloyati'),
+    ('0112', 'kz_at', 'Atyrau viloyati'),
+    ('0113', 'kz_bayan', 'Bayanshoul viloyati'),
+    ('0114', 'kz_north', 'Shimoliy Qozog‘iston viloyati'),
+    ('0115', 'kz_east', 'Sharqiy Qozog‘iston viloyati'),
+    ('0116', 'kz_alm', 'Almaty viloyati'),
+    ('0117', 'kz_west', 'G‘arbiy Qozog‘iston viloyati'),
+    ('0118', 'kz_kost', 'Qostanai viloyati'),
+    ('0119', 'kz_aty', 'Atyrau viloyati');
+
+-- Qoraqalpog' districts
+
+    INSERT INTO info.info_district (code, short_name, full_name)
+VALUES
+    ('0301', 'bekabad', 'Bekabad tumani'),
+    ('0302', 'chimboy', 'Chimboy tumani'),
+    ('0303', 'ellikqal’a', 'Ellikqal’a tumani'),
+    ('0304', 'kungrad', 'Kungrad tumani'),
+    ('0305', 'nukus', 'Nukus tumani'),
+    ('0306', 'qong‘irot', 'Qong‘irot tumani'),
+    ('0307', 'tuproq', 'Tuproq qishloq tumani'),
+    ('0308', 'shumanay', 'Shumanay tumani'),
+    ('0309', 'amudaryo', 'Amudaryo tumani'),
+    ('0310', 'mo‘ynoq', 'Mo‘ynoq tumani'),
+    ('0311', 'muynak', 'Muynak tumani'),
+    ('0312', 'nukus_sh', 'Nukus shahar');

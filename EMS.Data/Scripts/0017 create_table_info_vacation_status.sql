@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EMS.Data.Scripts
-{
-    class _0017_create_table_info_vacation_status
-    {
-    }
-}
+﻿create TABLE my.info_vacation_status
+(
+    id SERIAL PRIMARY KEY,
+    short_name VARCHAR(10) NOT NULL,--active
+    full_name  VARCHAR(50) NOT NULL, 
+    created_date TIMESTAMP without TIME ZONE DEFAULT current_TIMESTAMP,
+    updated_date TIMESTAMP without TIME ZONE
+);

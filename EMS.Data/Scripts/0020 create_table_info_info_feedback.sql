@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EMS.Data.Scripts
-{
-    class _0020_create_table_info_info_feedback
-    {
-    }
-}
+﻿create table if not exists info.info_feedback_type
+(
+    id serial primary key,
+    text TEXT NULL,
+    is_read boolean default false,
+    created_date TIMESTAMP WITHOUT TIME ZONE DEFAULT current_TIMESTAMP,
+    updated_date TIMESTAMP WITHOUT TIME ZONE
+)
